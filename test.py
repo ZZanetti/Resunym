@@ -16,7 +16,7 @@ class TestWords(unittest.TestCase):
     def test_skillReplace(self):
         self.assertEqual(correctSkillCase("The candidate should know php and node", "I know PHP and Node.js"), "I know php and node", "skills should match employers case and spelling")    
         self.assertEqual(correctSkillCase("The candidate should know .net", "I know .Net."), "I know .net.", "skills should match employers case and spelling, should recognize and maintain punctuation")    
-    def test_capswordReplace(self):
+    def test_caseMatch(self):
         self.assertEqual(polishWord("Terror", "fear"), "Fear", "case should match user original case")
         
     def test_sentenceReplace(self):
