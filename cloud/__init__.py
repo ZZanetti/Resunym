@@ -3,6 +3,7 @@ def makeCloudtext(words, counts):
  max_index = len(words)
  output_array = []
  word = ""
+#shouldcreakout sep f for tag
 
  for i in range(0,max_index):
      word = words[i]
